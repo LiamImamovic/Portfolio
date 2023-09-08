@@ -43,7 +43,7 @@ nav ul li:hover::before {
   transform: scaleY(1);
 }
 
-nav ul li {
+nav ul li{
   position: relative;
   display: inline-block;
 
