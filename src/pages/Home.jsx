@@ -1,6 +1,9 @@
+import Header from "../Header"
+
 const Home = () => {
     
     const shapes = document.querySelectorAll(".shape");
+
 
   // Créez un objet contenant les facteurs de réduction pour chaque forme
   const reductionFactors = {
@@ -45,89 +48,13 @@ const Home = () => {
   
   return (
       <div className="flex flex-col h-screen ">
-        <div className="w-10/12 mx-auto mt-20 flex items-center justify-between text-lg">
-          <span>imamovic.dev</span>
-          <nav>
-            <ul className="flex items-center justify-around space-x-16">
-              <li>
-                <a className="link" href="/">
-                  about
-                </a>
-                <div className="absolute more  bottom-full -left-2 flex flex-row w-[150px] items-center space-x-2 text-xs transition duration-300 ease-in-out md:group-hover:flex">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 24 24"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g>
-                      <path fill="none" d="M0 0h24v24H0z"></path>
-                      <path
-                        fillRule="nonzero"
-                        d="M17.841 15.659l.176.177.178-.177a2.25 2.25 0 0 1 3.182 3.182l-3.36 3.359-3.358-3.359a2.25 2.25 0 0 1 3.182-3.182zM12 14v2a6 6 0 0 0-6 6H4a8 8 0 0 1 7.75-7.996L12 14zm0-13c3.315 0 6 2.685 6 6a5.998 5.998 0 0 1-5.775 5.996L12 13c-3.315 0-6-2.685-6-6a5.998 5.998 0 0 1 5.775-5.996L12 1zm0 2C9.79 3 8 4.79 8 7s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"
-                      ></path>
-                    </g>
-                  </svg>
-                  <span>more of me</span>
-                </div>
-              </li>
-              <li>
-                <a className="link" href="/">
-                  projects
-                </a>
-                <div className="absolute more  bottom-full -left-2 flex flex-row w-[150px] items-center space-x-2 text-xs transition duration-300 ease-in-out md:group-hover:flex">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 24 24"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g>
-                      <path fill="none" d="M0 0h24v24H0z"></path>
-                      <path d="M23 12l-7.071 7.071-1.414-1.414L20.172 12l-5.657-5.657 1.414-1.414L23 12zM3.828 12l5.657 5.657-1.414 1.414L1 12l7.071-7.071 1.414 1.414L3.828 12z"></path>
-                    </g>
-                  </svg>
-                  <span>my work</span>
-                </div>
-              </li>
-              <li>
-                <a className="link" href="/">
-                  contact
-                </a>
-                <div className="absolute more  bottom-full -left-2 flex w-[150px] items-center space-x-2 text-xs transition duration-300 ease-in-out md:group-hover:flex">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 24 24"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g>
-                      <path fill="none" d="M0 0h24v24H0z"></path>
-                      <path d="M10 3h4a8 8 0 1 1 0 16v3.5c-5-2-12-5-12-11.5a8 8 0 0 1 8-8zm2 14h2a6 6 0 1 0 0-12h-4a6 6 0 0 0-6 6c0 3.61 2.462 5.966 8 8.48V17z"></path>
-                    </g>
-                  </svg>
-                  <span>say hi :{`)`}</span>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
+        <Header />
         <div className=" w-10/12 text-center mx-auto flex-1 items-center w-full mt-36 space-y-6">
           <h2 className="text-xl font-extralight tracking-max ">
             <span className="font-bold">HELLO!</span> MY NAME IS
           </h2>
           <h2 className="mt-4 text-center text-8xl font-extrabold whitespace-pre-line">
-            <div>
+            <div className="name">
               <span className="inline-block translate-x-0 translate-y-0 transition-all duration-200 ease-in-out hover:origin-[50%_100%] hover:-rotate-3 hover:scale-110">
                 L
               </span>
@@ -142,7 +69,7 @@ const Home = () => {
               </span>
             </div>
 
-            <div>
+            <div className="name">
               <span className="inline-block translate-x-0 translate-y-0 transition-all duration-200 ease-in-out hover:origin-[50%_100%] hover:-rotate-3 hover:scale-110">
                 I
               </span>
@@ -169,7 +96,7 @@ const Home = () => {
               </span>
             </div>
           </h2>
-          <p className="w-4/12 mx-auto">
+          <p className="w-3/12 mx-auto">
             I am a frontend developer who loves to work on the web. I am
             passionate about building simple and elegant solutions to complex
             problems.
