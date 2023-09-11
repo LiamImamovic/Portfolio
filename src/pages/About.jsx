@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Header from "../Header";
 
 const About = () => {
-
   useEffect(() => {
     const shapes = document.querySelectorAll(".shape");
 
@@ -46,6 +45,8 @@ const About = () => {
     });
   }, []); // Le tableau vide [] signifie que cette fonction d'effet ne s'exécutera qu'une fois après le montage du composant
 
+
+  
   return (
     <div className="flex flex-col h-screen ">
       <Header />
