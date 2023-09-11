@@ -84,4 +84,13 @@ nav ul li{
     transform: scale(1);
     opacity: 60%;
   }
+
+}
+
+.activeLink{
+  color: #de5055;
+}
+
+.myNmae:hover + .backHome{
+  display: flex;
 }
