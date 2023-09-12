@@ -97,7 +97,7 @@ const Home = () => {
           </div>
         </h2>
         <p className="w-3/12 mx-auto">
-          I am a frontend developer who loves to work on the web. I am
+          I am a developer who loves to work on the web. I am
           passionate about building simple and elegant solutions to complex
           problems.
         </p>

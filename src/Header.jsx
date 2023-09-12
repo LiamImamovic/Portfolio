@@ -26,7 +26,7 @@ const Header = () => {
         {location.pathname !== "/" && (
           <div
             className={`absolute pl-3	space-x-4 text-white flex ${
-              isHovered ? 'opacity-100' : 'opacity-0'
+              isHovered ? "opacity-100" : "opacity-0"
             } goHome`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -99,8 +99,34 @@ const Header = () => {
             </div>
           </li>
           <li>
+            {location.pathname === "/projects" && (
+              <div className="absolute left-1/2 top-5 -translate-x-1/2 rotate-180 xs:top-11 md:top-2.5 md:-left-4 md:rotate-0">
+                <svg
+                  width="18px"
+                  height="18px"
+                  viewBox="0 0 166 78"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{
+                    color: "#DE5055",
+                  }}
+                >
+                  <path
+                    d="M165.992 3.30909C165.992 13.5522 166.366 20.3859 162.13 29.8493C157.895 39.3127 151.688 47.9114 143.862 55.1543C136.037 62.3973 133 65.7454 116.522 72.0626C106.298 75.9825 105.5 78 84.2726 78C73.2058 78 67.7244 75.9825 57.5 72.0626C47.2756 68.1427 32.5083 62.3973 24.6829 55.1543C16.8574 47.9114 10.65 39.3127 6.41487 29.8493C2.17978 20.3859 -9.67494e-07 10.2431 0 0L81.7189 3.30909H165.992Z"
+                    fill="#DE5055"
+                  />
+                </svg>
+              </div>
+            )}
             <a className="link" href="/">
-              projects
+              <Link
+                to="/projects"
+                className={
+                  location.pathname === "/projects" ? "activeLink" : ""
+                }
+              >
+                projects
+              </Link>
             </a>
             <div className="absolute more  bottom-full -left-2 flex flex-row w-[150px] items-center space-x-2 text-xs transition duration-300 ease-in-out md:group-hover:flex">
               <svg
@@ -121,8 +147,32 @@ const Header = () => {
             </div>
           </li>
           <li>
+          {location.pathname === "/contact" && (
+              <div className="absolute left-1/2 top-5 -translate-x-1/2 rotate-180 xs:top-11 md:top-2.5 md:-left-4 md:rotate-0">
+                <svg
+                  width="18px"
+                  height="18px"
+                  viewBox="0 0 166 78"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{
+                    color: "#DE5055",
+                  }}
+                >
+                  <path
+                    d="M165.992 3.30909C165.992 13.5522 166.366 20.3859 162.13 29.8493C157.895 39.3127 151.688 47.9114 143.862 55.1543C136.037 62.3973 133 65.7454 116.522 72.0626C106.298 75.9825 105.5 78 84.2726 78C73.2058 78 67.7244 75.9825 57.5 72.0626C47.2756 68.1427 32.5083 62.3973 24.6829 55.1543C16.8574 47.9114 10.65 39.3127 6.41487 29.8493C2.17978 20.3859 -9.67494e-07 10.2431 0 0L81.7189 3.30909H165.992Z"
+                    fill="#DE5055"
+                  />
+                </svg>
+              </div>
+            )}
             <a className="link" href="/">
-              contact
+              <Link
+                to="/contact"
+                className={location.pathname === "/contact" ? "activeLink" : ""}
+              >
+                contact
+              </Link>
             </a>
             <div className="absolute more  bottom-full -left-2 flex w-[150px] items-center space-x-2 text-xs transition duration-300 ease-in-out md:group-hover:flex">
               <svg
