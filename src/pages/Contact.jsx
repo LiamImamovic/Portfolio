@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "../Header.jsx";
 import clipboardCopy from "clipboard-copy";
+import { ShapesAnim } from "../animations/ShapesAnim";
 
 const Contact = () => {
   const goLinkedin = () => {
@@ -62,6 +63,8 @@ const Contact = () => {
         console.error("Copy failed: ", err);
       });
   };
+
+  ShapesAnim();
 
   return (
     <div className="flex flex-col h-screen ">

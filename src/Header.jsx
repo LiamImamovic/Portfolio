@@ -48,7 +48,7 @@ const Header = () => {
         )}
       </Link>
       <nav>
-        <ul className="flex items-center justify-around space-x-16">
+        <ul className="flex items-center justify-around space-x-2 lg:space-x-16">
           <li>
             {location.pathname === "/about" && (
               <div className="absolute left-1/2 top-5 -translate-x-1/2 rotate-180 xs:top-11 md:top-2.5 md:-left-4 md:rotate-0">
@@ -147,7 +147,7 @@ const Header = () => {
             </div>
           </li>
           <li>
-          {location.pathname === "/contact" && (
+            {location.pathname === "/contact" && (
               <div className="absolute left-1/2 top-5 -translate-x-1/2 rotate-180 xs:top-11 md:top-2.5 md:-left-4 md:rotate-0">
                 <svg
                   width="18px"

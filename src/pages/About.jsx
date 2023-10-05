@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Header from "../Header";
+import { ShapesAnim } from "../animations/ShapesAnim";
 
 const About = () => {
   useEffect(() => {
@@ -45,6 +46,8 @@ const About = () => {
     });
   }, []); // Le tableau vide [] signifie que cette fonction d'effet ne s'exécutera qu'une fois après le montage du composant
 
+  ShapesAnim();
+
   return (
     <div className="flex flex-col h-screen ">
       <Header />
@@ -71,7 +74,7 @@ const About = () => {
               <span>Node, </span>
               <span>TypeScript, </span>
               <span>Tailwind CSS and </span>
-              <span>Storybook, </span>
+              <span>Firebase, </span>
             </div>
             <div className=" md:contents">
               <div className="inline-flex items-center justify-center rounded-3xl  py-0.5 px-3 text-sm tracking-wider text-blue  space-x-2 bg-red-400/50">
@@ -159,19 +162,34 @@ const About = () => {
               and{" "}
               <div className="inline-flex items-center justify-center rounded-3xl  py-0.5 px-3 text-sm tracking-wider text-blue  space-x-2 bg-red-400/50">
                 <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  height="1em"
-                  width="1em"
                   xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="1em"
+                  height="1em"
+                  viewBox="0,0,256,256"
                 >
-                  <title></title>
-                  <path d="M16.71.243l-.12 2.71a.18.18 0 00.29.15l1.06-.8.9.7a.18.18 0 00.28-.14l-.1-2.76 1.33-.1a1.2 1.2 0 011.279 1.2v21.596a1.2 1.2 0 01-1.26 1.2l-16.096-.72a1.2 1.2 0 01-1.15-1.16l-.75-19.797a1.2 1.2 0 011.13-1.27L16.7.222zM13.64 9.3c0 .47 3.16.24 3.59-.08 0-3.2-1.72-4.89-4.859-4.89-3.15 0-4.899 1.72-4.899 4.29 0 4.45 5.999 4.53 5.999 6.959 0 .7-.32 1.1-1.05 1.1-.96 0-1.35-.49-1.3-2.16 0-.36-3.649-.48-3.769 0-.27 4.03 2.23 5.2 5.099 5.2 2.79 0 4.969-1.49 4.969-4.18 0-4.77-6.099-4.64-6.099-6.999 0-.97.72-1.1 1.13-1.1.45 0 1.25.07 1.19 1.87z"></path>
+                  <g
+                    fill="#ffffff"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    strokeWidth="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                  >
+                    <g transform="scale(10.66667,10.66667)">
+                      <path d="M8.56,4.94l-6.02,10.4l3.005,-14.193c0.097,-0.457 0.712,-0.544 0.931,-0.131zM9.67,7.02l1.2,2.25l-5.53,5.23zM14.16,6.15l-1.79,1.7l-1.52,-2.86l0.973,-1.674c0.198,-0.341 0.694,-0.329 0.876,0.021zM21.13,18.74l-8.8,5.12c-0.15,0.1 -0.33,0.14 -0.5,0.14c-0.17,0 -0.35,-0.04 -0.5,-0.13l-8.05,-4.65l15.367,-14.563c0.291,-0.276 0.771,-0.114 0.837,0.281l2.126,12.772c0.07,0.41 -0.12,0.82 -0.48,1.03z"></path>
+                    </g>
+                  </g>
                 </svg>
-                <div className="mt-0.5">Storybook</div>
+                <div className="mt-0.5">Firebase</div>
               </div>
               ,{" "}
             </div>{" "}

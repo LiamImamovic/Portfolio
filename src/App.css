@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&display=swap");
 
 body {
   background-color: black;
@@ -11,8 +10,8 @@ body {
   padding: 0;
 }
 
-.name{
-  font-family: 'Playfair Display' ;
+.name {
+  font-family: "Playfair Display";
   font-weight: 800;
 }
 
@@ -50,13 +49,12 @@ nav ul li:hover::before {
   transform: scaleY(1);
 }
 
-nav ul li{
+nav ul li {
   position: relative;
   display: inline-block;
 
   cursor: pointer;
 }
-
 
 .more {
   display: none;
@@ -69,48 +67,29 @@ nav ul li{
 .shape {
   position: absolute;
   z-index: -10;
-  transition: transform 0.2s ease-out;
-  opacity: 60%;
-
-  animation: grow 1s ease-in-out ;
-
 }
 
-@keyframes grow {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 60%;
-  }
-
-}
-
-.activeLink{
+.activeLink {
   color: #de5055;
 }
 
-.myNmae:hover + .backHome{
+.myNmae:hover + .backHome {
   display: flex;
 }
 
 .goHome {
   position: absolute;
   top: 0;
-  left: -8%; 
+  left: -8%;
   width: 0;
   height: 100%;
   background: #de5055;
   border-radius: 15px;
   overflow: hidden;
-  transition: width 0.2s ease; 
+  transition: width 0.2s ease;
 }
 
 .myName:hover + .goHome,
 .goHome:hover {
   width: 150%;
 }
-
-
-

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import Header from "../Header";
+import { ShapesAnim } from "../animations/ShapesAnim";
 
 const Home = () => {
-
   useEffect(() => {
     const shapes = document.querySelectorAll(".shape");
 
@@ -46,14 +46,16 @@ const Home = () => {
     });
   }, []); // Le tableau vide [] signifie que cette fonction d'effet ne s'exécutera qu'une fois après le montage du composant.
 
+  ShapesAnim();
+
   return (
     <div className="flex flex-col h-screen ">
       <Header />
-      <div className=" w-10/12 text-center mx-auto flex-1 items-center w-full mt-36 space-y-6">
+      <div className=" w-10/12 text-center mx-auto flex-1 items-center w-full mt-24 lg:mt-36 space-y-6">
         <h2 className="text-xl font-extralight tracking-max ">
           <span className="font-bold">HELLO!</span> MY NAME IS
         </h2>
-        <h2 className="mt-4 text-center text-8xl font-extrabold whitespace-pre-line">
+        <h2 className="mt-4 text-center text-6xl lg:text-8xl font-extrabold whitespace-pre-line">
           <div className="name">
             <span className="inline-block translate-x-0 translate-y-0 transition-all duration-200 ease-in-out hover:origin-[50%_100%] hover:-rotate-3 hover:scale-110">
               L
@@ -96,10 +98,9 @@ const Home = () => {
             </span>
           </div>
         </h2>
-        <p className="w-3/12 mx-auto">
-          I am a developer who loves to work on the web. I am
-          passionate about building simple and elegant solutions to complex
-          problems.
+        <p className="w-8/12 lg:w-3/12 mx-auto">
+          I am a developer who loves to work on the web. I am passionate about
+          building simple and elegant solutions to complex problems.
         </p>
       </div>
       <div
