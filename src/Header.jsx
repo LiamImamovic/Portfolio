@@ -77,7 +77,7 @@ const Header = () => {
                 about
               </Link>
             </a>
-            <div className="absolute more  bottom-full -left-2 flex flex-row w-[150px] items-center space-x-2 text-xs transition duration-300 ease-in-out md:group-hover:flex hidden lg:display">
+            <div className="absolute more  bottom-full -left-2 flex flex-row w-[150px] items-center space-x-2 text-xs transition duration-300 ease-in-out md:group-hover:flex">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -128,7 +128,7 @@ const Header = () => {
                 projects
               </Link>
             </a>
-            <div className="absolute more  bottom-full -left-2 flex flex-row w-[150px] items-center space-x-2 text-xs transition duration-300 ease-in-out md:group-hover:flex hidden lg:display">
+            <div className="absolute more  bottom-full -left-2 flex flex-row w-[150px] items-center space-x-2 text-xs transition duration-300 ease-in-out md:group-hover:flex">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -174,7 +174,7 @@ const Header = () => {
                 contact
               </Link>
             </a>
-            <div className="absolute more  bottom-full -left-2 flex w-[150px] items-center space-x-2 text-xs transition duration-300 ease-in-out md:group-hover:flex hidden lg:display">
+            <div className="absolute more  bottom-full -left-2 flex w-[150px] items-center space-x-2 text-xs transition duration-300 ease-in-out md:group-hover:flex">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
