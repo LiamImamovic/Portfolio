@@ -8,7 +8,7 @@ export const ShapesAnim = () => {
 
     gsap.set(shapes, { transformOrigin: "50% 50%", scale: 0, opacity: 0 });
 
-    shapes.forEach((shape, index) => {
+    shapes.forEach((shape) => {
       tl.to(shape, {
         scale: 1,
         opacity: 0.6,

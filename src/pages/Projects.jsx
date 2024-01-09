@@ -114,8 +114,8 @@ const Projects = () => {
           <p>Check back soon.</p>
         </div>
         <p class="whitespace-pre-line text-xs font-bold">
-          Meanwhile, this site is being built &amp; designed with ReactJS, ,
-          Tailwind CSS &amp; Figma
+          Meanwhile, this site is being built &amp; designed with ReactJS and
+          Tailwind CSS &amp;
         </p>
       </div>
       <div class="-z-10 overflow-hidden ">

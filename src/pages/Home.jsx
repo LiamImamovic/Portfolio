@@ -99,8 +99,10 @@ const Home = () => {
           </div>
         </h2>
         <p className="w-8/12 lg:w-3/12 mx-auto">
-          I am a developer who loves to work on the web. I am passionate about
-          building simple and elegant solutions to complex problems.
+          I'm a Salesforce-focused Full Stack developer who thrives on crafting
+          simple, elegant solutions to complex web development challenges. My
+          versatility and commitment to staying current with industry trends
+          make me a results-driven professional.
         </p>
       </div>
       <div

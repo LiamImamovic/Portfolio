@@ -57,24 +57,24 @@ const About = () => {
         </h2>
 
         <h2 className="whitespace-pre-line dark:text-blue text-md xs:text-2xl md:text-6xl font-extrabold">
-          a frontend developer with affinity for design, intuitive user
+          a fullstack developer with affinity for design, intuitive user
           experience and pixel-perfect user interfaces
         </h2>
 
         <div className="flex flex-col space-y-4 leading-relaxed md:flex-row md:space-x-12 md:space-y-0">
           <p className="w-full whitespace-pre-line md:w-1/2">
-            Currently at EPSI, I'm looking for an intership for a front-end /
-            full-stack developer job. I'm open to suggestions and motivated to
-            learn every day!
+            Currently in an internship at Groupe Cassous, I'm immersed in
+            Salesforce development. Open to suggestions and driven to learn
+            every day, I'm a student at EPSI.
           </p>
           <div className="w-full md:w-1/2">
             I have acquired several skills in web development, including{" "}
-            <div className="contents md:hidden">
+            <div className="contents hidden">
               <span>React, </span>
               <span>Node, </span>
               <span>TypeScript, </span>
               <span>Tailwind CSS and </span>
-              <span>Firebase, </span>
+              <span>Salesforce, </span>
             </div>
             <div className=" md:contents">
               <div className="inline-flex items-center justify-center rounded-3xl  py-0.5 px-3 text-sm tracking-wider text-blue  space-x-2 bg-red-400/50">
@@ -161,35 +161,8 @@ const About = () => {
               </div>{" "}
               and{" "}
               <div className="inline-flex items-center justify-center rounded-3xl  py-0.5 px-3 text-sm tracking-wider text-blue  space-x-2 bg-red-400/50">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="1em"
-                  height="1em"
-                  viewBox="0,0,256,256"
-                >
-                  <g
-                    fill="#ffffff"
-                    fill-rule="nonzero"
-                    stroke="none"
-                    strokeWidth="1"
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
-                    stroke-miterlimit="10"
-                    stroke-dasharray=""
-                    stroke-dashoffset="0"
-                    font-family="none"
-                    font-weight="none"
-                    font-size="none"
-                    text-anchor="none"
-                  >
-                    <g transform="scale(10.66667,10.66667)">
-                      <path d="M8.56,4.94l-6.02,10.4l3.005,-14.193c0.097,-0.457 0.712,-0.544 0.931,-0.131zM9.67,7.02l1.2,2.25l-5.53,5.23zM14.16,6.15l-1.79,1.7l-1.52,-2.86l0.973,-1.674c0.198,-0.341 0.694,-0.329 0.876,0.021zM21.13,18.74l-8.8,5.12c-0.15,0.1 -0.33,0.14 -0.5,0.14c-0.17,0 -0.35,-0.04 -0.5,-0.13l-8.05,-4.65l15.367,-14.563c0.291,-0.276 0.771,-0.114 0.837,0.281l2.126,12.772c0.07,0.41 -0.12,0.82 -0.48,1.03z"></path>
-                    </g>
-                  </g>
-                </svg>
-                <div className="mt-0.5">Firebase</div>
+                {/* ADD SVG SALESFORCE */}
+                <div className="mt-0.5">Salesforce</div>
               </div>
               ,{" "}
             </div>{" "}
